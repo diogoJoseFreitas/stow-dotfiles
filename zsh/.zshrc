@@ -1,5 +1,7 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=nvim
+export VISUAL=vim
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -20,7 +22,5 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export EDITOR="nvim"
-# User configuration
+#export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
