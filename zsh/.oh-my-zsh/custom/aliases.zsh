@@ -1,6 +1,7 @@
 alias virt-manager='env GTK_THEME=Adwaita:dark virt-manager'
 
 alias gs='git status'
+alias glog='git log --oneline'
 
 # Shut Down PC
 byebye() { 
