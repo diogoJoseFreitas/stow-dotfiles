@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "ts_ls", "clangd", "pylsp", "rust_analyzer" },
+        ensure_installed = { "lua_ls", "ts_ls",  "rust_analyzer" },
         automatic_installation = true,
       })
     end,
@@ -19,9 +19,6 @@ return {
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
       local lspconfig = require("lspconfig")
-      lspconfig.pylsp.setup({
-        capabilities = capabilities,
-      })
       lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
