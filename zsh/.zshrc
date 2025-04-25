@@ -23,5 +23,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-#export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
+fpath=(~/.config/zsh/completions $fpath)
+autoload -Uz compinit
+compinit
