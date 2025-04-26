@@ -2,10 +2,12 @@
 Projeto de arquivos de configuração para meus setups pessoais
 
 ## Pré-requisitos
-- [ ] Zsh and [Oh-my-zsh]()
+- [ ] Zsh and [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 - [ ] Yazi
 - [ ] Neovim
 - [ ] Docker engine
+- [ ] Lazydocker ([link](https://github.com/jesseduffield/lazydocker))
+- [ ] Lazygit ([link](https://github.com/jesseduffield/lazygit))
 
 ### Zsh setup
 ```bash 
@@ -37,8 +39,3 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 ### Neovim setup
 
-
-
-```python
-    print("Hello World")
-```
