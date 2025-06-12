@@ -53,7 +53,7 @@ cargo build --release --locked
 ```
 Add Yazi and ya to path:
 ```bash
-mv target/release/yazi target/release/ya /usr/local/bin/
+sudo mv target/release/yazi target/release/ya /usr/local/bin/
 ```
 
 ### Docker setup
