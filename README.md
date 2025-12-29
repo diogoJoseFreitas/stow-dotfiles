@@ -25,6 +25,15 @@ git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/p
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
+#### NerdFont
+```bash
+mkdir -p ~/.local/share/fonts && \
+cd /tmp && \
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip && \
+unzip -o Meslo.zip -d ~/.local/share/fonts && \
+rm Meslo.zip && \
+fc-cache -fv
+```
 
 ### Neovim setup
 Download latest and move to /opt folder
