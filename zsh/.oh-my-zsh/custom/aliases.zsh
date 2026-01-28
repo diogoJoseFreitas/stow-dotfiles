@@ -14,3 +14,8 @@ byebye() {
     echo "Shutdown canceled."
   fi
 }
+
+# VS Code Versão FlatPack
+code() {
+  flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code $1
+}
