@@ -11,7 +11,7 @@ Projeto de arquivos de configuração para meus setups pessoais
 
 ### Zsh setup
 ```bash 
- sudo dnf install zsh
+ sudo apt install zsh fzf
 ```
 Oh my Zsh:
 ```bash
