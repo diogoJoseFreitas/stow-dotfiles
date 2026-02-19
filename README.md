@@ -54,6 +54,10 @@ Install Rust:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
 ```
+Istall gcc:
+```bash
+sudo apt install build-essential
+```
 Clone and build Yazi:
 ```bash
 git clone https://github.com/sxyazi/yazi.git
