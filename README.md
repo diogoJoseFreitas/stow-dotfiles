@@ -11,7 +11,7 @@ Projeto de arquivos de configuração para meus setups pessoais
 
 ### Zsh setup
 ```bash 
- sudo apt install zsh fzf
+ sudo apt install zsh fzf stow
 ```
 Oh my Zsh:
 ```bash
