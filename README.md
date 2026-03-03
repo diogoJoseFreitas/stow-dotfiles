@@ -1,7 +1,7 @@
 # stow-dotfiles
 Projeto de arquivos de configuração para meus setups pessoais.
 A única pré definição no caso do [Bluefin](https://projectbluefin.io/) é que será utilizado o terminal padrão + fish + starship.
-# Innitial Setup:
+# Initial Setup:
 - Install [Starship](https://starship.rs/):
 '''bash
 curl -sS https://starship.rs/install.sh | sh
