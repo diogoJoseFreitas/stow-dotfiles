@@ -1,8 +1,16 @@
 # stow-dotfiles
-Projeto de arquivos de configuração para meus setups pessoais
+Projeto de arquivos de configuração para meus setups pessoais.
+A única pré definição no caso do [Bluefin](https://projectbluefin.io/) é que será utilizado o terminal padrão + fish + starship.
+# Innitial Setup:
+- Install [Starship](https://starship.rs/):
+'''bash
+curl -sS https://starship.rs/install.sh | sh
+'''
+- On the default terminal, execute `stow fish` to get it's setup.
+- Create a profile that starts with fish and set it to default.
+- Go to that new profile.
 
 ## Pré-requisitos
-- [ ] Zsh and [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 - [ ] Yazi
 - [ ] Neovim
 - [ ] Docker engine
@@ -11,21 +19,36 @@ Projeto de arquivos de configuração para meus setups pessoais
 
 ### Programs setup
 ```bash 
- brew install yazi neovim lazygit
+ brew install stow neovim bat
 ```
-Oh my Zsh:
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install and Configure: 
+Since you're free to choose between any software to install, you basically need to install the service and ¨stow" it.
+## Yazi:
+```bash 
+ brew install yazi 
 ```
-#### fzf-tab
-```bash
-git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+
+```bash 
+stow yazi
 ```
-#### zsh-autosuggestions
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+## Lazygit:
+```bash 
+ brew install lazygit
+```
+
+```bash 
+stow lazygit
 ```
 
 
+## Lazydocker:
+```bash 
+ brew install lazydocker
+```
+
+```bash 
+stow lazydocker
+```
 ### Neovim setup
-
