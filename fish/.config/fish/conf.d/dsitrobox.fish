@@ -1,0 +1,1 @@
+alias de 'distrobox enter'
