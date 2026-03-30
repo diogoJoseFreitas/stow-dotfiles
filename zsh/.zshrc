@@ -27,3 +27,4 @@ source $ZSH/oh-my-zsh.sh
 fpath=(~/.config/zsh/completions $fpath)
 autoload -Uz compinit
 compinit
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
