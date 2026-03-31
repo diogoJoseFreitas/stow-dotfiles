@@ -7,7 +7,7 @@ return { -- Top Pickers & Explorer
   { "<leader>e",       function() Snacks.explorer() end,                                       desc = "File Explorer" },
   { "<leader>y",       function() vim.cmd.Yazi() end,                                          desc = "Yazi" },
   { "<leader>p",       function() Snacks.picker.projects() end,                                desc = "Git Projects" },
-  { "<leader>gH",       function() Snacks.dashboard.open() end,                                desc = "Open Home" },
+  { "<leader>gH",      function() Snacks.dashboard.open() end,                                 desc = "Open Home" },
   -- find
   { "<leader>fb",      function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
   { "<leader>fc",      function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
@@ -107,6 +107,7 @@ return { -- Top Pickers & Explorer
   { "gao",        function() Snacks.picker.lsp_outgoing_calls() end,    desc = "C[a]lls Outgoing" },
   { "<leader>ss", function() Snacks.picker.lsp_symbols() end,           desc = "LSP Symbols" },
   { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+  { "<leader>f",  function() vim.lsp.buf.format() end,                  desc = "LSP Format Text" },
   -- Other
   { "<leader>z",  function() Snacks.zen() end,                          desc = "Toggle Zen Mode" },
   { "<leader>Z",  function() Snacks.zen.zoom() end,                     desc = "Toggle Zoom" },
@@ -121,10 +122,19 @@ return { -- Top Pickers & Explorer
   {
     "<c-t>",
     function()
-      Snacks.terminal.toggle(cmd, opts)
+      Snacks.terminal.toggle()
       vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { buffer = true })
     end,
     desc = "Toggle Terminal"
+  },
+  {
+    "<c-t>",
+    function()
+      Snacks.terminal.toggle()
+      vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { buffer = true })
+    end,
+    desc = "Toggle Terminal",
+    mode = { "t" }
   },
   { "<c-_>", function() Snacks.terminal() end,                desc = "which_key_ignore" },
   { "]]",    function() Snacks.words.jump(vim.v.count1) end,  desc = "Next Reference",  mode = { "n", "t" } },
