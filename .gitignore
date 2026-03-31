@@ -1,3 +1,4 @@
 nvim/**/.repro/
 /nvim.old/.config/nvim
 /nvim/.config/nvim/lazy-lock.json
+*.old
