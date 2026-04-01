@@ -7,7 +7,7 @@ return { -- Top Pickers & Explorer
   { "<leader>e",       function() Snacks.explorer() end,                                       desc = "File Explorer" },
   { "<leader>y",       function() vim.cmd.Yazi() end,                                          desc = "Yazi" },
   { "<leader>p",       function() Snacks.picker.projects() end,                                desc = "Git Projects" },
-  { "<leader>gH",      function() Snacks.dashboard.open() end,                                 desc = "Open Home" },
+  { "<leader>H",      function() Snacks.dashboard.open() end,                                 desc = "Open Home" },
   -- find
   { "<leader>fb",      function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
   { "<leader>fc",      function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
