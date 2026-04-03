@@ -28,10 +28,10 @@ return { -- Top Pickers & Explorer
   { "<leader>gp",      function() Snacks.picker.gh_pr() end,                                   desc = "GitHub Pull Requests (open)" },
   { "<leader>gP",      function() Snacks.picker.gh_pr({ state = "all" }) end,                  desc = "GitHub Pull Requests (all)" },
   -- Window Management
-  { "<C-k>",           function() vim.cmd("wincmd k") end,                                     desc = "Window Up" },
-  { "<C-j>",           function() vim.cmd("wincmd j") end,                                     desc = "Window Down" },
-  { "<C-h>",           function() vim.cmd("wincmd h") end,                                     desc = "Window Left" },
-  { "<C-l>",           function() vim.cmd("wincmd l") end,                                     desc = "Window Right" },
+  { "<C-k>",           function() vim.cmd("wincmd k") end,                                     desc = "Window Up" , mode = {"n", "t"}},
+  { "<C-j>",           function() vim.cmd("wincmd j") end,                                     desc = "Window Down", mode = {"n", "t"} },
+  { "<C-h>",           function() vim.cmd("wincmd h") end,                                     desc = "Window Left", mode = {"n", "t"} },
+  { "<C-l>",           function() vim.cmd("wincmd l") end,                                     desc = "Window Right", mode = {"n", "t"} },
   {
     "<leader>wv",
     function()
