@@ -8,7 +8,7 @@ return {
       bigfile = { enabled = true },
 --      dashboard = { enabled = true },
       dashboard = require("config.dashboard"),
-      explorer = { enabled = true },
+      explorer = { enabled = true, preview = true },
       indent = { enabled = true },
       input = { enabled = true },
       notifier = {

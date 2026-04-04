@@ -1,4 +1,4 @@
-function y
+function y --description "Opens Yazi and changes directoy to quited path." 
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     command yazi $argv --cwd-file="$tmp"
 

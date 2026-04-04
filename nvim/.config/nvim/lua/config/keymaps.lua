@@ -7,7 +7,7 @@ return { -- Top Pickers & Explorer
   { "<leader>e",       function() Snacks.explorer() end,                                       desc = "File Explorer" },
   { "<leader>y",       function() vim.cmd.Yazi() end,                                          desc = "Yazi" },
   { "<leader>p",       function() Snacks.picker.projects() end,                                desc = "Git Projects" },
-  { "<leader>H",      function() Snacks.dashboard.open() end,                                 desc = "Open Home" },
+  { "<leader>H",       function() Snacks.dashboard.open() end,                                 desc = "Open Home" },
   -- find
   { "<leader>fb",      function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
   { "<leader>fc",      function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
@@ -28,10 +28,10 @@ return { -- Top Pickers & Explorer
   { "<leader>gp",      function() Snacks.picker.gh_pr() end,                                   desc = "GitHub Pull Requests (open)" },
   { "<leader>gP",      function() Snacks.picker.gh_pr({ state = "all" }) end,                  desc = "GitHub Pull Requests (all)" },
   -- Window Management
-  { "<C-k>",           function() vim.cmd("wincmd k") end,                                     desc = "Window Up" , mode = {"n", "t"}},
-  { "<C-j>",           function() vim.cmd("wincmd j") end,                                     desc = "Window Down", mode = {"n", "t"} },
-  { "<C-h>",           function() vim.cmd("wincmd h") end,                                     desc = "Window Left", mode = {"n", "t"} },
-  { "<C-l>",           function() vim.cmd("wincmd l") end,                                     desc = "Window Right", mode = {"n", "t"} },
+  { "<C-k>",           function() vim.cmd("wincmd k") end,                                     desc = "Window Up",                  mode = { "n", "t" } },
+  { "<C-j>",           function() vim.cmd("wincmd j") end,                                     desc = "Window Down",                mode = { "n", "t" } },
+  { "<C-h>",           function() vim.cmd("wincmd h") end,                                     desc = "Window Left",                mode = { "n", "t" } },
+  { "<C-l>",           function() vim.cmd("wincmd l") end,                                     desc = "Window Right",               mode = { "n", "t" } },
   {
     "<leader>wv",
     function()
@@ -136,25 +136,11 @@ return { -- Top Pickers & Explorer
     desc = "Toggle Terminal",
     mode = { "t" }
   },
-  { "<c-_>", function() Snacks.terminal() end,                desc = "which_key_ignore" },
-  { "]]",    function() Snacks.words.jump(vim.v.count1) end,  desc = "Next Reference",  mode = { "n", "t" } },
-  { "[[",    function() Snacks.words.jump(-vim.v.count1) end, desc = "Prev Reference",  mode = { "n", "t" } },
-  {
-    "<leader>N",
-    desc = "Neovim News",
-    function()
-      Snacks.win({
-        file = vim.api.nvim_get_runtime_file("doc/news.txt", false)[1],
-        width = 0.6,
-        height = 0.6,
-        wo = {
-          spell = false,
-          wrap = false,
-          signcolumn = "yes",
-          statuscolumn = " ",
-          conceallevel = 3,
-        },
-      })
-    end,
-  }
+  { "<c-_>",      function() Snacks.terminal() end,                                 desc = "which_key_ignore" },
+  { "]]",         function() Snacks.words.jump(vim.v.count1) end,                   desc = "Next Reference",             mode = { "n", "t" } },
+  { "[[",         function() Snacks.words.jump(-vim.v.count1) end,                  desc = "Prev Reference",             mode = { "n", "t" } },
+  -- Obsidian
+  { "gf",         function() return require("obsidian").util.gf_passthrought() end, expr = true,                         ft = "markdown",    desc = "Obsidian: Open Referenced file" },
+  { "tc",         function() vim.schedule(function() return require("obsidian").util.toggle_checkbox() end) end, expr = true,                         ft = "markdown",    desc = "Obsidian: Toggle Checkbox" },
+  { "<leader>on", "<cmd>ObsidianNew<CR>",                                          desc = "Obsidian: New Obsidian Note" },
 }
