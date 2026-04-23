@@ -19,5 +19,16 @@ vim.lsp.config('clangd', {
   root_markers = { ".git", "compile_commands.json", "compile_flags.txt" },
 })
 
+vim.lsp.config('jdtls', {
+  cmd = {
+    "distrobox-enter",
+    "-n", "java", -- nome da sua distrobox
+    "--",
+    "jdtls"
+  },
+  filetypes = { "java" },
+  root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" },
+})
+
 -- Para ativar o servidor após configurar
 vim.lsp.enable('clangd')
