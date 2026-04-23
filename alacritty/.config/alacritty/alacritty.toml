@@ -1,0 +1,22 @@
+[terminal]
+[terminal.shell]
+program = "/usr/bin/fish"
+
+[window]
+opacity = 0.7
+blur = true
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
