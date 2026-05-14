@@ -67,7 +67,7 @@ return {
               checkThirdParty = false, -- disable annoying warnings for third-party libraries
             },
             telemetry = { enable = false },
-          },
+          }
         },
       }
 
