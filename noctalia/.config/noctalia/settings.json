@@ -18,12 +18,13 @@
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
-            "org.gnome.Ptyxis",
             "org.gnome.Nautilus",
             "com.brave.Browser",
             "com.google.Chrome",
             "org.ferdium.Ferdium",
-            "Alacritty"
+            "Alacritty",
+            "io.github.kolunmi.Bazaar",
+            "com.ranfdev.DistroShelf"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -673,7 +674,7 @@
     },
     "wallpaper": {
         "automationEnabled": true,
-        "directory": "/home/diogo/Pictures/Wallpapers",
+        "directory": "/var/home/diogo/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
