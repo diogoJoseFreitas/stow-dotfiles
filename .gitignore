@@ -3,3 +3,4 @@ nvim/**/.repro/
 /nvim/.config/nvim/lazy-lock.json
 *.old
 /noctalia/.config/noctalia/plugins/network-manager-vpn
+/noctalia/.config/noctalia/plugins

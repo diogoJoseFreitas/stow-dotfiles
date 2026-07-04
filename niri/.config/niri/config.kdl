@@ -283,13 +283,18 @@ layout {
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 //spawn-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-spawn-at-startup "dbus-update-activation-environment --all"
-spawn-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-spawn-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'Breeze-Dark'"
+//spawn-at-startup "dbus-update-activation-environment --all"
+//spawn-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+//spawn-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'Breeze-Dark'"
+//spawn-at-startup "iio-niri" "listen"
+spawn-at-startup "sh" "-c" "rm -f /run/user/1000/iio-niri.*.socket && iio-niri listen"
+
+// Precisa ser instalado e adicionado a path: https://github.com/Zhaith-Izaliel/iio-niri
+
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+     skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -354,6 +359,15 @@ window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {proportion 0.0;}
 }
+
+window-rule {
+    match app-id="org.gnome.Calculator"
+    //open-on-output "eDP-1"
+    //open-maximized true
+//    open-on-workspace "chat"
+    default-column-width {proportion 0.3333;}
+}
+
 window-rule {
     match app-id="Ferdium"
     //open-on-output "eDP-1"

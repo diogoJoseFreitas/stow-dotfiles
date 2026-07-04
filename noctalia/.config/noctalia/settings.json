@@ -20,13 +20,19 @@
         "pinnedApps": [
             "org.gnome.Nautilus",
             "com.brave.Browser",
-            "com.google.Chrome",
             "org.ferdium.Ferdium",
             "Alacritty",
             "io.github.kolunmi.Bazaar",
             "com.ranfdev.DistroShelf",
             "org.gnome.Connections",
-            "io.github.totoshko88.RustConn"
+            "io.github.totoshko88.RustConn",
+            "com.collaboraoffice.Office",
+            "com.google.Chrome",
+            "it.mijorus.gearlever",
+            "md.obsidian.Obsidian",
+            "me.kozec.syncthingtk",
+            "winboat",
+            "io.beekeeperstudio.Studio"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -140,6 +146,26 @@
                     "textColor": "none",
                     "useMonospaceFont": true,
                     "usePadding": false
+                },
+                {
+                    "defaultSettings": {
+                        "autoStartBreaks": false,
+                        "autoStartWork": false,
+                        "longBreakDuration": 15,
+                        "sessionsBeforeLongBreak": 4,
+                        "shortBreakDuration": 5,
+                        "workDuration": 25
+                    },
+                    "id": "plugin:pomodoro"
+                },
+                {
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultDuration": 0,
+                        "iconColor": "none",
+                        "textColor": "none"
+                    },
+                    "id": "plugin:timer"
                 },
                 {
                     "colorizeIcons": false,
@@ -516,7 +542,7 @@
         "weatherTaliaMascotAlways": false
     },
     "network": {
-        "bluetoothAutoConnect": false,
+        "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
         "bluetoothRssiPollIntervalMs": 60000,
@@ -585,7 +611,7 @@
         "overlayLayer": true
     },
     "plugins": {
-        "autoUpdate": false,
+        "autoUpdate": true,
         "notifyUpdates": true
     },
     "sessionMenu": {

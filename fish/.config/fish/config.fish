@@ -6,3 +6,7 @@ starship init fish | source
 set -g -x EDITOR nvim
 set -g -x VISUAL bat
 
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/var/home/diogo/.local/bin" $PATH

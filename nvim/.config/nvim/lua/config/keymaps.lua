@@ -51,6 +51,7 @@ return { -- Top Pickers & Explorer
     desc = "Split Horizontal"
   },
   { "<leader>w",  function() vim.cmd("q") end,                       desc = "Close Window" },
+  { "<leader>q", function() Snacks.bufdelete() end,                    desc = "Delete Buffer" },
   -- Grep
   { "<leader>sb", function() Snacks.picker.lines() end,              desc = "Buffer Lines" },
   { "<leader>sB", function() Snacks.picker.grep_buffers() end,       desc = "Grep Open Buffers" },
