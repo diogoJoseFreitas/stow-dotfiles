@@ -62,7 +62,7 @@
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "compact",
+        "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "fontScale": 1,
@@ -79,7 +79,7 @@
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
         "outerCorners": true,
-        "position": "top",
+        "position": "bottom",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -117,13 +117,13 @@
             ],
             "left": [
                 {
-                    "clockColor": "none",
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
+                    "deviceNativePath": "__default__",
+                    "displayMode": "graphic",
+                    "hideIfIdle": false,
+                    "hideIfNotDetected": true,
+                    "id": "Battery",
+                    "showNoctaliaPerformance": true,
+                    "showPowerProfiles": true
                 },
                 {
                     "compactMode": true,
@@ -218,15 +218,6 @@
                     "unreadBadgeColor": "primary"
                 },
                 {
-                    "deviceNativePath": "__default__",
-                    "displayMode": "graphic",
-                    "hideIfIdle": false,
-                    "hideIfNotDetected": true,
-                    "id": "Battery",
-                    "showNoctaliaPerformance": true,
-                    "showPowerProfiles": true
-                },
-                {
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
@@ -247,13 +238,13 @@
                     "textColor": "none"
                 },
                 {
-                    "defaultSettings": {
-                        "connectedColor": "primary",
-                        "disableToastNotifications": false,
-                        "disconnectedColor": "none",
-                        "displayMode": "onhover"
-                    },
-                    "id": "plugin:network-manager-vpn"
+                    "clockColor": "none",
+                    "customFont": "",
+                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "useCustomFont": false
                 },
                 {
                     "colorizeDistroLogo": false,
@@ -272,7 +263,7 @@
         "backlightDeviceMappings": [
         ],
         "brightnessStep": 5,
-        "enableDdcSupport": false,
+        "enableDdcSupport": true,
         "enforceMinimum": true
     },
     "calendar": {
@@ -297,10 +288,10 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Rose Pine",
+        "predefinedScheme": "Rose Pine Moon",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -344,6 +335,15 @@
                 },
                 {
                     "id": "NoctaliaPerformance"
+                },
+                {
+                    "defaultSettings": {
+                        "connectedColor": "primary",
+                        "disableToastNotifications": false,
+                        "disconnectedColor": "none",
+                        "displayMode": "onhover"
+                    },
+                    "id": "plugin:network-manager-vpn"
                 }
             ],
             "right": [
@@ -405,32 +405,38 @@
         "animationSpeed": 1,
         "backgroundOpacity": 1,
         "colorizeIcons": false,
-        "deadOpacity": 0.6,
+        "deadOpacity": 0.8,
         "displayMode": "auto_hide",
         "dockType": "floating",
-        "enabled": false,
-        "floatingRatio": 1,
-        "groupApps": false,
-        "groupClickAction": "cycle",
+        "enabled": true,
+        "floatingRatio": 0.54,
+        "groupApps": true,
+        "groupClickAction": "list",
         "groupContextMenuMode": "extended",
         "groupIndicatorStyle": "dots",
         "inactiveIndicators": false,
         "indicatorColor": "primary",
-        "indicatorOpacity": 0.6,
-        "indicatorThickness": 3,
-        "launcherIcon": "",
+        "indicatorOpacity": 0.8,
+        "indicatorThickness": 6,
+        "launcherIcon": "grid-dots",
         "launcherIconColor": "none",
         "launcherPosition": "end",
         "launcherUseDistroLogo": false,
         "monitors": [
+            "eDP-1",
+            "DP-2"
         ],
-        "onlySameOutput": true,
+        "onlySameOutput": false,
         "pinnedApps": [
+            "Alacritty",
+            "org.ferdium.Ferdium",
+            "com.brave.Browser",
+            "com.google.Chrome"
         ],
-        "pinnedStatic": false,
-        "position": "bottom",
-        "showDockIndicator": false,
-        "showLauncherIcon": false,
+        "pinnedStatic": true,
+        "position": "left",
+        "showDockIndicator": true,
+        "showLauncherIcon": true,
         "sitOnFrame": false,
         "size": 1
     },
@@ -438,7 +444,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": true,
         "animationDisabled": false,
-        "animationSpeed": 1,
+        "animationSpeed": 2,
         "autoStartAuth": true,
         "avatarImage": "/home/diogo/.face",
         "boxRadiusRatio": 1,
@@ -450,7 +456,7 @@
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
         "enableShadows": true,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "keybinds": {
             "keyDown": [
@@ -494,7 +500,7 @@
         "shadowOffsetY": 3,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
-        "showScreenCorners": false,
+        "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
         "smoothScrollEnabled": true,
         "telemetryEnabled": true
@@ -737,11 +743,25 @@
         "translucentWidgets": false
     },
     "wallpaper": {
-        "automationEnabled": true,
+        "automationEnabled": false,
         "directory": "/var/home/diogo/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
+            {
+                "appearance": "dark",
+                "colorScheme": "Rose Pine Moon",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#ea9a97",
+                    "#9ccfd8",
+                    "#3e8fb0",
+                    "#eb6f92"
+                ],
+                "path": "/var/home/diogo/Pictures/Wallpapers/carlo-com-camera.jpeg",
+                "useWallpaperColors": false
+            }
         ],
         "fillColor": "#000000",
         "fillMode": "crop",

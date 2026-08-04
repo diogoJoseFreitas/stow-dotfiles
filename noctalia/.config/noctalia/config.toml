@@ -1,0 +1,7 @@
+[brightness]
+# Força o Noctalia a controlar todas as telas conectadas simultaneamente ao mover o slider principal
+method = "all" 
+
+# Garante que o ddcutil seja usado nas telas externas compatíveis
+backend = "auto"
+

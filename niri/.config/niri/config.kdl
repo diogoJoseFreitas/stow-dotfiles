@@ -115,7 +115,7 @@ input {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 10
+    gaps 6
     tab-indicator {
         active-color "#5b8277"
         inactive-color "#4d4d42"
@@ -389,6 +389,19 @@ window-rule {
     // Identifica a janela pelo título ou pela classe
     match title="Wayland to X Recording Bridge"
     match app-id="org.kde.xwaylandvideobridge"
+
+    // Impede que ela apareça no carrossel (layout principal)
+    open-floating true
+    //exclude-from-layout true
+    
+    // Opcional: define um tamanho mínimo e joga para longe
+    //default-floating-rect x=-100 y=-100 width=1 height=1
+}
+
+window-rule {
+    // Identifica a janela pelo título ou pela classe
+    match title="Friends List"
+//    match app-id="org.kde.xwaylandvideobridge"
 
     // Impede que ela apareça no carrossel (layout principal)
     open-floating true
