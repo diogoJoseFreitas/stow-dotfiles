@@ -287,7 +287,9 @@ layout {
 //spawn-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
 //spawn-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'Breeze-Dark'"
 //spawn-at-startup "iio-niri" "listen"
-spawn-at-startup "sh" "-c" "rm -f /run/user/1000/iio-niri.*.socket && iio-niri listen"
+//spawn-at-startup "sh" "-c" "rm -f /run/user/1000/iio-niri.*.socket && iio-niri listen"
+spawn-at-startup "iio-niri" "listen" "--monitor" "eDP-1"
+
 
 // Precisa ser instalado e adicionado a path: https://github.com/Zhaith-Izaliel/iio-niri
 

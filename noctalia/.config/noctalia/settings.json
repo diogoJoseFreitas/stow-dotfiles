@@ -151,6 +151,15 @@
                 },
                 {
                     "defaultSettings": {
+                        "compactMode": false,
+                        "defaultDuration": 0,
+                        "iconColor": "none",
+                        "textColor": "none"
+                    },
+                    "id": "plugin:timer"
+                },
+                {
+                    "defaultSettings": {
                         "autoStartBreaks": false,
                         "autoStartWork": false,
                         "longBreakDuration": 15,
@@ -159,15 +168,6 @@
                         "workDuration": 25
                     },
                     "id": "plugin:pomodoro"
-                },
-                {
-                    "defaultSettings": {
-                        "compactMode": false,
-                        "defaultDuration": 0,
-                        "iconColor": "none",
-                        "textColor": "none"
-                    },
-                    "id": "plugin:timer"
                 },
                 {
                     "colorizeIcons": false,
@@ -238,6 +238,15 @@
                     "iconColor": "none",
                     "id": "Network",
                     "textColor": "none"
+                },
+                {
+                    "defaultSettings": {
+                        "connectedColor": "primary",
+                        "disableToastNotifications": false,
+                        "disconnectedColor": "none",
+                        "displayMode": "onhover"
+                    },
+                    "id": "plugin:network-manager-vpn"
                 },
                 {
                     "clockColor": "none",
@@ -337,15 +346,6 @@
                 },
                 {
                     "id": "NoctaliaPerformance"
-                },
-                {
-                    "defaultSettings": {
-                        "connectedColor": "primary",
-                        "disableToastNotifications": false,
-                        "disconnectedColor": "none",
-                        "displayMode": "onhover"
-                    },
-                    "id": "plugin:network-manager-vpn"
                 }
             ],
             "right": [
@@ -746,7 +746,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/var/home/diogo/Pictures/Wallpapers",
+        "directory": "/home/diogo/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
