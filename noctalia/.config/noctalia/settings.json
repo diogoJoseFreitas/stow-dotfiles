@@ -32,7 +32,9 @@
             "md.obsidian.Obsidian",
             "me.kozec.syncthingtk",
             "winboat",
-            "io.beekeeperstudio.Studio"
+            "io.beekeeperstudio.Studio",
+            "LinuxToys",
+            "org.kde.kdenlive"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
