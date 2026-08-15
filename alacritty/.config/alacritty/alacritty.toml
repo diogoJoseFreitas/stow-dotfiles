@@ -1,6 +1,6 @@
 [terminal]
 [terminal.shell]
-program = "/usr/bin/fish"
+program = "/home/linuxbrew/.linuxbrew/bin/fish"
 
 [window]
 opacity = 0.7
