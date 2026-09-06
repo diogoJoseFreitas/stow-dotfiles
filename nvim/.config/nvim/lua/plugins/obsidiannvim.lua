@@ -22,7 +22,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "/var/home/diogo/Documents/obsidian-notes",
+        path = "/home/diogo/Documents/obsidian-notes",
       },
     },
     notes_subdir = '1.PROJETOS',
