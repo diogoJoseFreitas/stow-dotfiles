@@ -10,3 +10,5 @@ set -g -x VISUAL bat
 
 # Added by Antigravity CLI installer
 set -gx PATH "/home/diogo/.local/bin" $PATH
+
+set -g fish_greeting
