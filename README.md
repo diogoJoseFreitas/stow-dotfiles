@@ -1,25 +1,16 @@
 # stow-dotfiles
 Projeto de arquivos de configuração para meus setups pessoais.
-A única pré definição no caso do [Bluefin](https://projectbluefin.io/) é que será utilizado o terminal padrão + fish + starship.
 # Initial Setup:
 - Install [Starship](https://starship.rs/):
 ```bash 
 curl -sS https://starship.rs/install.sh | sh
 ```
-- On the default terminal, execute `stow fish` to get it's setup.
-- Create a profile that starts with fish and set it to default.
+- Execute `stow fish` to get it's setup.
 - Go to that new profile.
 
-## Pré-requisitos
-- [ ] Yazi
-- [ ] Neovim
-- [ ] Docker engine
-- [ ] Lazydocker ([link](https://github.com/jesseduffield/lazydocker))
-- [ ] Lazygit ([link](https://github.com/jesseduffield/lazygit))
-
-### Programs setup
+## Programs setup
 ```bash 
- brew install stow neovim bat
+ brew install fish stow bat
 ```
 
 # Install and Configure: 
@@ -51,4 +42,13 @@ stow lazygit
 ```bash 
 stow lazydocker
 ```
-### Neovim setup
+
+
+## Neovim setup
+```bash 
+ brew install neovim tree-sitter tree-sitter-cli
+```
+
+```bash 
+stow nvim
+```
