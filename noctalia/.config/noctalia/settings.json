@@ -22,7 +22,6 @@
             "com.brave.Browser",
             "org.ferdium.Ferdium",
             "Alacritty",
-            "io.github.kolunmi.Bazaar",
             "com.ranfdev.DistroShelf",
             "org.gnome.Connections",
             "io.github.totoshko88.RustConn",
@@ -34,7 +33,10 @@
             "winboat",
             "io.beekeeperstudio.Studio",
             "LinuxToys",
-            "org.kde.kdenlive"
+            "org.kde.kdenlive",
+            "solaar",
+            "org.gnome.Software",
+            "org.gnome.Mahjongg"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -299,7 +301,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Nord",
+        "predefinedScheme": "Catppuccin",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -411,7 +413,7 @@
         "displayMode": "auto_hide",
         "dockType": "floating",
         "enabled": true,
-        "floatingRatio": 0.54,
+        "floatingRatio": 0.45,
         "groupApps": true,
         "groupClickAction": "list",
         "groupContextMenuMode": "extended",
@@ -630,7 +632,7 @@
         "position": "center",
         "powerOptions": [
             {
-                "action": "lock",
+                "action": "suspend",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
@@ -658,9 +660,9 @@
                 "keybind": "4"
             },
             {
-                "action": "suspend",
+                "action": "lock",
                 "command": "",
-                "countdownEnabled": true,
+                "countdownEnabled": false,
                 "enabled": true,
                 "keybind": "5"
             },
@@ -682,8 +684,8 @@
                 "action": "userspaceReboot",
                 "command": "",
                 "countdownEnabled": true,
-                "enabled": true,
-                "keybind": "6"
+                "enabled": false,
+                "keybind": ""
             }
         ],
         "showHeader": true,
@@ -745,7 +747,7 @@
         "translucentWidgets": false
     },
     "wallpaper": {
-        "automationEnabled": false,
+        "automationEnabled": true,
         "directory": "/home/diogo/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
@@ -763,6 +765,90 @@
                 ],
                 "path": "/var/home/diogo/Pictures/Wallpapers/carlo-com-camera.jpeg",
                 "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cba6f7",
+                    "#fab387",
+                    "#94e2d5",
+                    "#f38ba8"
+                ],
+                "path": "/home/diogo/Pictures/Wallpapers/gargantua-black-3840x2160-9621.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cba6f7",
+                    "#fab387",
+                    "#94e2d5",
+                    "#f38ba8"
+                ],
+                "path": "/home/diogo/Pictures/Wallpapers/wallpaperflare.com_wallpaper.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cba6f7",
+                    "#fab387",
+                    "#94e2d5",
+                    "#f38ba8"
+                ],
+                "path": "/home/diogo/Pictures/Wallpapers/la-pieta.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cba6f7",
+                    "#fab387",
+                    "#94e2d5",
+                    "#f38ba8"
+                ],
+                "path": "/home/diogo/Pictures/Wallpapers/romantic-night-sky-3840x2160-25549.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cba6f7",
+                    "#fab387",
+                    "#94e2d5",
+                    "#f38ba8"
+                ],
+                "path": "/home/diogo/Pictures/Wallpapers/saojose-jesus.webp",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cba6f7",
+                    "#fab387",
+                    "#94e2d5",
+                    "#f38ba8"
+                ],
+                "path": "/home/diogo/Pictures/Wallpapers/lonely-apocalyptic-3840x2160-25350.png",
+                "useWallpaperColors": false
             }
         ],
         "fillColor": "#000000",
@@ -775,7 +861,7 @@
         "overviewEnabled": false,
         "overviewTint": 0.6,
         "panelPosition": "follow_bar",
-        "randomIntervalSec": 1200,
+        "randomIntervalSec": 900,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
         "skipStartupTransition": false,
@@ -784,12 +870,12 @@
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": [
-            "fade",
             "disc",
             "stripes",
             "wipe",
             "pixelate",
-            "honeycomb"
+            "honeycomb",
+            "fade"
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
