@@ -98,6 +98,16 @@
         "widgets": {
             "center": [
                 {
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": false,
+                    "icon": "rocket",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": false
+                },
+                {
                     "characterCount": 2,
                     "colorizeIcons": false,
                     "emptyColor": "tertiary",
@@ -301,7 +311,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Rose Pine",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -728,6 +738,10 @@
             {
                 "enabled": true,
                 "id": "starship"
+            },
+            {
+                "enabled": true,
+                "id": "umbriel"
             }
         ],
         "enableUserTheming": false
@@ -768,14 +782,14 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Catppuccin",
+                "colorScheme": "Rose Pine",
                 "darkMode": true,
                 "generationMethod": "tonal-spot",
                 "paletteColors": [
-                    "#cba6f7",
-                    "#fab387",
-                    "#94e2d5",
-                    "#f38ba8"
+                    "#ebbcba",
+                    "#9ccfd8",
+                    "#31748f",
+                    "#eb6f92"
                 ],
                 "path": "/home/diogo/Pictures/Wallpapers/gargantua-black-3840x2160-9621.jpg",
                 "useWallpaperColors": false
@@ -810,28 +824,28 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Catppuccin",
+                "colorScheme": "Rose Pine",
                 "darkMode": true,
                 "generationMethod": "tonal-spot",
                 "paletteColors": [
-                    "#cba6f7",
-                    "#fab387",
-                    "#94e2d5",
-                    "#f38ba8"
+                    "#ebbcba",
+                    "#9ccfd8",
+                    "#31748f",
+                    "#eb6f92"
                 ],
                 "path": "/home/diogo/Pictures/Wallpapers/romantic-night-sky-3840x2160-25549.jpg",
                 "useWallpaperColors": false
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Catppuccin",
+                "colorScheme": "Rose Pine",
                 "darkMode": true,
                 "generationMethod": "tonal-spot",
                 "paletteColors": [
-                    "#cba6f7",
-                    "#fab387",
-                    "#94e2d5",
-                    "#f38ba8"
+                    "#ebbcba",
+                    "#9ccfd8",
+                    "#31748f",
+                    "#eb6f92"
                 ],
                 "path": "/home/diogo/Pictures/Wallpapers/saojose-jesus.webp",
                 "useWallpaperColors": false
